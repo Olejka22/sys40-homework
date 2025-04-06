@@ -52,3 +52,19 @@
 ![Скриншот-2](https://github.com/Olejka22/sys40-homework/blob/main/img/zbx22-2.png)<br>
 ![Скриншот-3](https://github.com/Olejka22/sys40-homework/blob/main/img/zbx22-3.png)<br>
 ![Скриншот-4](https://github.com/Olejka22/sys40-homework/blob/main/img/zbx22-4.png)
+---
+
+### Задание 4
+
+`Создайте свой кастомный дашборд.`
+
+   1. Выполняя ДЗ, сверяйтесь с процессом отражённым в записи лекции.
+   2. В разделе Dashboards создайте новый дашборд
+   3. Разместите на нём несколько графиков на ваше усмотрение.
+
+#### Требования к результату:
+Прикрепите в файл README.md скриншот дашборда с названием «Задание 4»
+
+#### Cкриншоты заданию 4:
+![Скриншот-1](https://github.com/Olejka22/sys40-homework/blob/main/img/zbx24-1.png)<br>
+![Скриншот-2](https://github.com/Olejka22/sys40-homework/blob/main/img/zbx24-2.png)
