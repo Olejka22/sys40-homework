@@ -48,7 +48,7 @@
 Прикрепите скриншот страницы хостов, где будут видны привязки шаблонов с названиями «Задание 2-3». Хосты должны иметь зелёный статус подключения
 
 #### Cкриншоты заданиям 2-3:
-![Скриншот-1](https://github.com/Olejka22/sys40-homework/blob/main/img/zbx23-1.png)<br>
-![Скриншот-2](https://github.com/Olejka22/sys40-homework/blob/main/img/zbx23-2.png)<br>
-![Скриншот-3](https://github.com/Olejka22/sys40-homework/blob/main/img/zbx23-3.png)<br>
-![Скриншот-4](https://github.com/Olejka22/sys40-homework/blob/main/img/zbx23-4.png)
+![Скриншот-1](https://github.com/Olejka22/sys40-homework/blob/main/img/zbx22-1.png)<br>
+![Скриншот-2](https://github.com/Olejka22/sys40-homework/blob/main/img/zbx22-2.png)<br>
+![Скриншот-3](https://github.com/Olejka22/sys40-homework/blob/main/img/zbx22-3.png)<br>
+![Скриншот-4](https://github.com/Olejka22/sys40-homework/blob/main/img/zbx22-4.png)
