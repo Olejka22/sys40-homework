@@ -1,39 +1,23 @@
 # Домашнее задание к занятию 
-# "`Система мониторинга Zabbix`" - `Ольга Антоненко`
+# "`Система мониторинга Zabbix. Часть 2`" - `Ольга Антоненко`
 
 ### Задание 1
 
-`Установите Zabbix Server с веб-интерфейсом.`
+`Создайте свой шаблон, в котором будут элементы данных, мониторящие загрузку CPU и RAM хоста.`
 
    1. Выполняя ДЗ, сверяйтесь с процессом отражённым в записи лекции.
-   2. Установите PostgreSQL. Для установки достаточна та версия, что есть в системном репозитороии Debian 11.
-   3. Пользуясь конфигуратором команд с официального сайта, составьте набор команд для установки последней версии Zabbix с поддержкой PostgreSQL и Apache.
-   4. Выполните все необходимые команды для установки Zabbix Server и Zabbix Web Server.
+   2. В веб-интерфейсе Zabbix Servera в разделе Templates создайте новый шаблон
+   3. Создайте Item который будет собирать информацию об загрузке CPU в процентах
+   4. Создайте Item который будет собирать информацию об загрузке RAM в процентах
 
-#### Интерфейс zabbix
-![Скриншот-1](https://github.com/Olejka22/sys40-homework/blob/main/img/zbx11-1.png)
+#### Cкриншоты:
+##### Шаблон:
+![Скриншот-1](https://github.com/Olejka22/sys40-homework/blob/main/img/zbx21-1.png)
+##### Items:
+![Скриншот-2](https://github.com/Olejka22/sys40-homework/blob/main/img/zbx21-2.png)
+##### Latest data:
+![Скриншот-3](https://github.com/Olejka22/sys40-homework/blob/main/img/zbx21-3.png)
 
-#### Команды
-```
-sudo -s
-apt install postgresq # устанавливаем БД
-
-# ставим zabbix
-wget https://repo.zabbix.com/zabbix/7.0/debian/pool/main/z/zabbix-release/zabbix-release_latest_7.0+debian12_all.deb
-dpkg -i zabbix-release_latest_7.0+debian12_all.deb
-apt update
-apt install zabbix-server-pgsql zabbix-frontend-php php8.2-pgsql zabbix-apache-conf zabbix-sql-scripts
-
-# настройка БД
-sudo -u postgres createuser --pwprompt zabbix
-sudo -u postgres createdb -O zabbix zabbix
-zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
-sed -i 's/#DBPassword=/DBPassword=zabbix/g' /etc/zabbix/zabbix_server.conf
-
-# старт сервера
-systemctl restart zabbix-server apache2
-systemctl enable zabbix-server apache2
-```
 ---
 
 ### Задание 2
